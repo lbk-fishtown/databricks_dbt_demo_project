@@ -18,8 +18,10 @@ models:
           - not_null
 
   - name: dim_suppliers
+    description: details of my suppliers, their location and accounts balance
     columns:
       - name: supplier_key
+        description: unique key for suppliers
         tests:
           - unique
           - not_null

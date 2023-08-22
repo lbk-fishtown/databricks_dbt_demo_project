@@ -2,6 +2,14 @@ version: 2
 
 models:
 
+  - name: dim_customers
+    description: customers dim table
+    columns:
+      - name: customer_key
+        tests:
+          - not_null
+          - unique
+              
   - name: dim_parts
     columns:
       - name: part_key

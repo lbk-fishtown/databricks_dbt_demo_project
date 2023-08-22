@@ -42,7 +42,9 @@ models:
           +materialized: view
       staging:
           +materialized: view
+          +tags: "silver"
       marts:
+          +tags: "gold"
           +materialized: table
           airbnb:
             +tags: "airbnb"
